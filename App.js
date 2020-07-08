@@ -7,9 +7,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
 
         <View style={styles.appbar}>
-          <View>
-            <Text style={styles.appbarTittle}>ひくラジ</Text>
-          </View>
+          <Text style={styles.appbarTittle}>ひくラジ</Text>
         </View>
 
         <View style={styles.testList}>
@@ -31,6 +29,13 @@ export default class App extends React.Component {
             <Text style={styles.testBotton}>診断する</Text>
           </View>
         </View>
+
+        <View style={styles.footer}>
+          <Text style={styles.footerText}>診断</Text>
+          <Text style={styles.footerText}>記録</Text>
+          <Text style={styles.footerText}>名簿</Text>
+        </View>
+
       </View>
     );
   }
@@ -69,8 +74,12 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     borderWidth: 1,
     overflow: "hidden",
-    width: 75,
-    marginLeft: 250,
+    width: 80,
+    position: 'absolute',
+    right: 0,
+    marginTop: 40,
+    marginRight: 10,
+    alignItems: 'center',
   },
   appbar: {
     position: 'absolute',
@@ -92,6 +101,26 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 24,
     fontWeight: 'bold',
+  },
+  footer: {
+  position: 'absolute',
+  flex:0.1,
+  left: 0,
+  right: 0,
+  bottom: -10,
+  backgroundColor:'#E31676',
+  flexDirection:'row',
+  justifyContent: 'center',
+  height:80,
+  alignItems:'center',
+  },
+  footerText: {
+  color:'white',
+  fontWeight:'bold',
+  alignItems:'center',
+  fontSize:24,
+  marginLeft: 'auto',
+  marginRight: 'auto',
   },
 
 });
