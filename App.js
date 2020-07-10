@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import Appbar from './src/components/Appbar';
-import TestListScreen from './src/screens/TestListScreen';
+import TestDetailScreen from './src/screens/TestDetailScreen';
 import Footer from './src/components/Footer';
 
 export default class App extends React.Component {
@@ -10,7 +10,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Appbar />
-        <TestListScreen />
+        <TestDetailScreen />
         <Footer />
       </View>
     );
