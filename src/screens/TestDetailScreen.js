@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   },
   testHeaderDate: {
     fontSize: 12,
-    color :'#fff',
+    color: '#fff',
   },
   testHeaderTitle: {
     fontSize: 20,
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     padding: 10,
     margin: 10,
-  }
+  },
 });
 
 export default TestDetailScreen;
