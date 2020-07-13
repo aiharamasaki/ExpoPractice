@@ -1,5 +1,6 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import TestListScreen from './src/screens/TestListScreen';
 import TestDetailScreen from './src/screens/TestDetailScreen';
@@ -7,6 +8,7 @@ import TestAnswerScreen from './src/screens/TestAnswerScreen';
 import YoutubeScreen from './src/screens/YoutubeScreen';
 import Youtube7Screen from './src/screens/Youtube7Screen';
 import StaffScreen from './src/screens/StaffScreen';
+import TestList from './src/components/TestList';
 
 const App = createStackNavigator({
   Home:       { screen: TestListScreen },
@@ -18,6 +20,8 @@ const App = createStackNavigator({
 }, {
   defaultNavigationOptions: {
     headerTitle: 'ひくラジ',
+    headerTintColor: '#fff',
+    headerBackTitle: null,
     headerTitleStyle: {
       color: 'white',
     },
