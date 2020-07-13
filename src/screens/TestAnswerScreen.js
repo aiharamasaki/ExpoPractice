@@ -16,7 +16,7 @@ class TestAnswerScreen extends React.Component {
           <Text style={styles.answerMain}>「視覚」が強く、頭の回転が早く、応答が早く、全体を俯瞰的・客観的にみえる。ただ、早とちりしている場合もある。また、頭の中のイメージを表現するために、手を使ったボディーランゲージを使う傾向にもあります。勉強法は、参考書にマーカーを引いて赤い下敷きで答えを隠して覚えるやり方が合っています。（目で見て覚える）</Text>
         </View>
         <View style={styles.bottom}>
-          <Text style={styles.bottomText}>設問に戻る</Text>
+          <Text style={styles.bottomText} onPress={() => { this.props.navigation.navigate('TestDetail'); }}>設問に戻る</Text>
         </View>
       </View>
     );

@@ -11,7 +11,7 @@ class TestDetailScreen extends React.Component {
         </View>
 
         <View style={styles.testSelect}>
-          <Text style={styles.testSelectText}>選択肢A ワインの色</Text>
+          <Text style={styles.testSelectText} onPress={() => { this.props.navigation.navigate('TestAnswer'); }}>選択肢A ワインの色</Text>
           <Text style={styles.testSelectText}>選択肢B ワインを注ぐ音</Text>
           <Text style={styles.testSelectText}>選択肢C ワインの香り</Text>
         </View>

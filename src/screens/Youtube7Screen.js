@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { WebView } from 'react-native-webview';
 
-class Youtube7 extends React.Component {
+class Youtube7Screen extends React.Component {
   render() {
     return (
       <WebView
@@ -13,4 +13,4 @@ class Youtube7 extends React.Component {
   }
 }
 
-export default Youtube7;
+export default Youtube7Screen;

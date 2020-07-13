@@ -7,7 +7,7 @@ class TestListScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <TestList />
+        <TestList navigation={this.props.navigation} />
       </View>
     );
   }

@@ -1,16 +1,18 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
+import { TouchableHighlight } from 'react-native-gesture-handler';
 
 class TestList extends React.Component {
   render() {
     return (
       <View style={styles.testList}>
-
-        <View style={styles.testListItem}>
-          <Text style={styles.testDate}>2020.00.00 ひくラジ #N 出題</Text>
-          <Text style={styles.testTitle}>ワイン</Text>
-          <Text style={styles.testBotton}>診断する</Text>
-        </View>
+        <TouchableHighlight onPress={() => { this.props.navigation.navigate('TestDetail'); }}>
+          <View style={styles.testListItem}>
+            <Text style={styles.testDate}>2020.00.00 ひくラジ #N 出題</Text>
+            <Text style={styles.testTitle}>ワイン</Text>
+            <Text style={styles.testBotton}>診断する</Text>
+          </View>
+        </TouchableHighlight>
 
         <View style={styles.testListItem}>
           <Text style={styles.testDate}>2020.00.00 ひくラジ #N 出題</Text>
