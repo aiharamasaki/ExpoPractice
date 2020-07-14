@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
+import Footer from '../components/Footer';
 
 class TestDetailScreen extends React.Component {
   render() {
@@ -15,6 +16,8 @@ class TestDetailScreen extends React.Component {
           <Text style={styles.testSelectText}>選択肢B ワインを注ぐ音</Text>
           <Text style={styles.testSelectText}>選択肢C ワインの香り</Text>
         </View>
+
+        <Footer navigation={this.props.navigation}/>
       </View>
     );
   }

@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
 
+import Footer from '../components/Footer';
+
 class StaffScreen extends React.Component {
   render() {
     return (
@@ -42,6 +44,7 @@ class StaffScreen extends React.Component {
           <Text style={styles.staffPoz}>アプリ開発見習い</Text>
           <Text style={styles.staffName}>相原　真樹　　　　　　　　自己肯定感が超絶高い</Text>
         </View>
+        <Footer navigation={this.props.navigation}/>
       </View>
     );
   }

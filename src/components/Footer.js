@@ -5,9 +5,9 @@ class Footer extends React.Component {
   render() {
     return (
       <View style={styles.footer}>
-        <Text style={styles.footerText1}>診断</Text>
-        <Text style={styles.footerText2}>記録</Text>
-        <Text style={styles.footerText3}>名簿</Text>
+        <Text style={styles.footerText1} onPress={() => { this.props.navigation.navigate('TestList'); }}>診断</Text>
+        <Text style={styles.footerText2} onPress={() => { this.props.navigation.navigate('Youtube'); }}>記録</Text>
+        <Text style={styles.footerText3} onPress={() => { this.props.navigation.navigate('Staff'); }}>名簿</Text>
       </View>
     );
   }
